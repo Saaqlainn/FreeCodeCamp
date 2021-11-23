@@ -32,6 +32,7 @@ body main p {
 }
 
 body main #img-div {
+  border-radius: .5rem;
   background-color: #fff;
   width: 100%;
   padding: 1rem;
@@ -47,7 +48,6 @@ body main #img-div #img-caption {
 }
 
 body main #tribute-info {
-  border: 1px solid red;
   font-size: 1.3rem;
   margin: 3rem 0rem;
 }
@@ -62,4 +62,21 @@ body main ul {
 body main ul li {
   margin: 1rem 0rem;
   line-height: 1.8rem;
+}
+
+body main .quote {
+  max-width: 40.5rem;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+body main #pm-singh {
+  max-width: 40.5rem;
+  font-size: 1.2rem;
+  text-align: left;
+}
+
+body main h3 {
+  text-align: center;
+  margin: 2rem 0rem;
 }

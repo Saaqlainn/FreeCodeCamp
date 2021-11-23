@@ -27,6 +27,7 @@ body {
             margin: 1rem;
         }
         #img-div {
+            border-radius: .5rem;
             background-color: #fff;
             width: 100%;
             padding: 1rem;
@@ -40,28 +41,38 @@ body {
             }
         }
         #tribute-info {
-            border: 1px solid red;
+            // border: 1px solid red;
             font-size: 1.3rem;
             margin: 3rem 0rem;
         }
 
         ul {
-            // border: 2px solid red;
-            // display: flex;
-            // flex-direction: column;
-            // justify-content: center;
-            // align-items: flex-start;
-            // padding: 2rem;
             max-width: 40.5rem;
             padding: 0rem 2rem;
             margin: auto;
-            // margin: 2rem auto 0rem auto;
             font-size: 1.2rem;
             li {
                 margin: 1rem 0rem;
                 line-height: 1.8rem;
                 
             }
+        }
+        
+        .quote {
+            // border: 2px solid red;
+            max-width: 40.5rem;
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+        #pm-singh {
+            // border: 1px solid red;
+            max-width: 40.5rem;
+            font-size: 1.2rem;
+            text-align: left;
+        }
+        h3 {
+            text-align:center ;
+            margin: 2rem 0rem ;
         }
     }
 }
