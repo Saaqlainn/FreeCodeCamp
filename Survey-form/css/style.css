@@ -64,7 +64,7 @@ body main #survey-form .input:focus {
   box-shadow: 0px 0px .5px 1px dodgerblue;
 }
 
-body main #survey-form #dropdown {
+body main #survey-form .dropdown {
   width: 100%;
   padding: .8rem 0rem .8rem .3rem;
   border: 2px solid #717D7E;
@@ -76,7 +76,7 @@ body main #survey-form #dropdown {
   transition: .3s;
 }
 
-body main #survey-form #dropdown:focus {
+body main #survey-form .dropdown:focus {
   border-color: dodgerblue;
   box-shadow: 0px 0px .5px 1px dodgerblue;
 }
@@ -88,6 +88,49 @@ body main #survey-form .radio-label {
   font-size: 1.3rem;
 }
 
-body main #survey-form .radio-button {
+body main #survey-form .radio-btn {
   margin-right: .5rem;
+}
+
+body main #survey-form .check-label {
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+  font-size: 1.3rem;
+}
+
+body main #survey-form .checkbox {
+  margin-right: .5rem;
+}
+
+body main #survey-form textarea {
+  width: 100%;
+  min-height: 10rem;
+  padding: 0.625rem;
+  border-radius: .5rem;
+  outline: none;
+  border: 2px solid dodgerblue;
+  box-shadow: 0px 0px .5px 1px dodgerblue;
+  font-size: 1.3rem;
+  font-weight: 300;
+  font-family: "Montserrat", sans-serif;
+  resize: vertical;
+}
+
+body main #survey-form button {
+  width: 100%;
+  margin: 1rem 0rem;
+  padding: .6rem 0rem;
+  border-radius: .3rem;
+  border: none;
+  color: #000;
+  background-color: #EAEDED;
+  font-size: 1.4rem;
+  font-weight: 300;
+  font-family: "Montserrat", sans-serif;
+}
+
+body main #survey-form button:hover {
+  background-color: #AAB7B8;
+  cursor: pointer;
 }
