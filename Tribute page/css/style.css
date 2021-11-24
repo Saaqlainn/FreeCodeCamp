@@ -28,7 +28,7 @@ body main title {
 
 body main p {
   font-size: 1rem;
-  margin: 1rem;
+  margin: 1.2rem;
 }
 
 body main #img-div {
@@ -43,12 +43,12 @@ body main #img-div #image {
 }
 
 body main #img-div #img-caption {
-  margin: 1rem 0rem;
+  margin: 1.2rem 0rem;
   font-size: 1rem;
 }
 
 body main #tribute-info {
-  font-size: 1.3rem;
+  font-size: 1.7rem;
   margin: 3rem 0rem;
 }
 
@@ -79,4 +79,28 @@ body main #pm-singh {
 body main h3 {
   text-align: center;
   margin: 2rem 0rem;
+}
+
+@media (min-width: 425px) {
+  html {
+    font-size: 70%;
+  }
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 85%;
+  }
+}
+
+@media (min-width: 1024px) {
+  html {
+    font-size: 95%;
+  }
+}
+
+@media (min-width: 1440px) {
+  html {
+    font-size: 100%;
+  }
 }
