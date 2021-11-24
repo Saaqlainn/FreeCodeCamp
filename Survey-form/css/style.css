@@ -38,7 +38,7 @@ body main #survey-form {
   background-color: #566573;
 }
 
-body main #survey-form label {
+body main #survey-form .label {
   display: block;
   margin: 1rem 0rem;
   padding: 0rem 0rem 0rem .5rem;
@@ -47,7 +47,7 @@ body main #survey-form label {
   font-weight: 300;
 }
 
-body main #survey-form input {
+body main #survey-form .input {
   width: 100%;
   padding: .8rem 0rem .8rem .3rem;
   border: 2px solid #717D7E;
@@ -59,7 +59,7 @@ body main #survey-form input {
   transition: .3s;
 }
 
-body main #survey-form input:focus {
+body main #survey-form .input:focus {
   border-color: dodgerblue;
   box-shadow: 0px 0px .5px 1px dodgerblue;
 }
@@ -79,4 +79,15 @@ body main #survey-form #dropdown {
 body main #survey-form #dropdown:focus {
   border-color: dodgerblue;
   box-shadow: 0px 0px .5px 1px dodgerblue;
+}
+
+body main #survey-form .radio-label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+body main #survey-form .radio-button {
+  margin-right: .5rem;
 }

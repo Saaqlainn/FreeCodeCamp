@@ -15,16 +15,16 @@
         <form id="survey-form" action="backend.php">
 
             <!-- name and email inputs -->
-            <label for="name">Name</label>
-            <input type="text" placeholder="Enter Your Name" id="name-label" required>
+            <label class="label" for="name">Name</label>
+            <input class="input" type="text" placeholder="Enter Your Name" id="name-label" required>
 
-            <label for="email">Email</label>
-            <input type="email" name="Email" id="email-label" placeholder="Enter Your Email" required>
+            <label class="label" for="email">Email</label>
+            <input class="input" type="email" name="Email" id="email-label" placeholder="Enter Your Email" required>
 
-            <label for="number">Age</label>
-            <input type="number" name="age" id="number-label" placeholder="Enter your age" required>
+            <label class="label" for="number">Age</label>
+            <input class="input" type="number" name="age" id="number-label" placeholder="Enter your age" required>
 
-            <label for="role">Which Option Best Describe Your current role ?</label>
+            <label class="label" for="role">Which Option Best Describe Your current role ?</label>
             <select name="role" id="dropdown">
                 <option disabled selected>Select Current Role</option>
                 <option value="student">Student</option>
@@ -35,15 +35,22 @@
             </select>
 
             <!-- radiobuttons -->
-            <!-- <label for="recommend">Would you recommend freeCodeCamp to a friend?</label>
-            <input type="radio" value="definately" id="radio-button">
-            <label for="radio-button">Definately</label>
+            <label class="label" for="recommend">Would you recommend freeCodeCamp to a friend?</label>
 
-            <input type="radio" value="Maybe" id="radio-button">
-            <label for="radio-button">Maybe</label>
+            <label class="radio-label"for="radio-button" id="radio-label">
+                <input class="radio-button" name="user-recommend" type="radio" value="definately" id="radio-button">
+                Definately
+            </label>
 
-            <input type="radio" value="Not Sure" id="radio-button">
-            <label for="radio-button">Not sure</label> -->
+            <label class="radio-label"for="radio-button" id="radio-label">
+                <input class="radio-button" name="user-recommend" type="radio" value="definately" id="radio-button">
+                Maybe
+            </label>
+
+            <label class="radio-label"for="radio-button" id="radio-label">
+                <input class="radio-button" name="user-recommend" type="radio" value="definately" id="radio-button">
+                NotSure
+            </label>
 
             <!-- FreeCodeCamp features -->
             <!-- <label for="feature">What is your favorite feature of freeCodeCamp?</label>
