@@ -18,24 +18,34 @@ body main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  /* Header And Paragraph */
 }
 
 body main #title {
-  font-size: 2rem;
   margin: 2rem 0rem;
   text-align: center;
+  font-size: 2rem;
   font-family: "Montserrat", sans-serif;
 }
 
 body main #discription {
-  font-size: 1.5rem;
   margin: 0rem 0rem 2rem;
+  font-size: 1.5rem;
   text-align: center;
 }
 
 body main #survey-form {
   padding: 1rem 1rem;
   background-color: #566573;
+  border-radius: 5px;
+  /* Name and Email inputs*/
+  /*Css for label is applied for all the label in the markup*/
+  /* Dropdowns 
+            Css for Dropdown is applied for both the dropdowns */
+  /* Radio buttons */
+  /* Checkboxes */
+  /* Text Area */
+  /* Submit Button */
 }
 
 body main #survey-form .label {
@@ -81,21 +91,30 @@ body main #survey-form .dropdown:focus {
   box-shadow: 0px 0px .5px 1px dodgerblue;
 }
 
+body main #survey-form .dropdown:hover {
+  cursor: pointer;
+}
+
 body main #survey-form .radio-label {
+  margin-bottom: 1rem;
   display: flex;
   align-items: center;
-  margin-bottom: 1rem;
   font-size: 1.3rem;
 }
 
 body main #survey-form .radio-btn {
   margin-right: .5rem;
+  margin-left: .5rem;
+}
+
+body main #survey-form .radio-btn:hover {
+  cursor: pointer;
 }
 
 body main #survey-form .check-label {
+  margin: 1rem;
   display: flex;
   align-items: center;
-  margin: 1rem;
   font-size: 1.3rem;
 }
 
@@ -103,18 +122,26 @@ body main #survey-form .checkbox {
   margin-right: .5rem;
 }
 
+body main #survey-form .checkbox:hover {
+  cursor: pointer;
+}
+
 body main #survey-form textarea {
-  width: 100%;
   min-height: 10rem;
+  width: 100%;
   padding: 0.625rem;
-  border-radius: .5rem;
   outline: none;
-  border: 2px solid dodgerblue;
-  box-shadow: 0px 0px .5px 1px dodgerblue;
+  border-radius: .5rem;
+  border: 2px solid #717D7E;
   font-size: 1.3rem;
   font-weight: 300;
   font-family: "Montserrat", sans-serif;
   resize: vertical;
+}
+
+body main #survey-form textarea:focus {
+  border: 2px solid dodgerblue;
+  box-shadow: 0px 0px .5px 1px dodgerblue;
 }
 
 body main #survey-form button {

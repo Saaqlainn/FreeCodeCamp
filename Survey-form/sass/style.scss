@@ -5,8 +5,8 @@
 }
 
 $fontstack: 'Montserrat', sans-serif;
-$border:#717D7E;
-$background:#566573;
+$border-clr:#717D7E;
+$background-clr:#566573;
 
 html {
     font-size: 62.5%;
@@ -20,23 +20,29 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        /* Header And Paragraph */
         #title {
-            font-size: 2rem;
             margin: 2rem 0rem;
             text-align: center;
+            font-size: 2rem;
             font-family: $fontstack;
         }
 
         #discription {
-            font-size: 1.5rem;
             margin: 0rem 0rem 2rem;
+            font-size: 1.5rem;
             text-align: center;
         }
 
         #survey-form {
             // border: 2px solid black;
             padding: 1rem 1rem;
-            background-color: $background;
+            background-color: $background-clr;
+            border-radius: 5px;
+
+            /* Name and Email inputs*/
+            /*Css for label is applied for all the label in the markup*/
             .label {
                 // border: 2px solid red;
                 display: block;
@@ -49,7 +55,7 @@ body {
             .input {
                 width: 100%;
                 padding: .8rem 0rem .8rem .3rem;
-                border: 2px solid $border;
+                border: 2px solid $border-clr;
                 border-radius: .4rem;
                 outline: none;
                 font-size: 1.2rem;
@@ -62,10 +68,12 @@ body {
                 box-shadow: 0px 0px .5px 1px dodgerblue;
             }
 
+            /* Dropdowns 
+            Css for Dropdown is applied for both the dropdowns */
             .dropdown {
                 width: 100%;
                 padding: .8rem 0rem .8rem .3rem;
-                border: 2px solid $border;
+                border: 2px solid $border-clr;
                 border-radius: .4rem;
                 outline: none;
                 font-size: 1.2rem;
@@ -77,45 +85,60 @@ body {
                 border-color: dodgerblue;
                 box-shadow: 0px 0px .5px 1px dodgerblue;
             }
+            .dropdown:hover {
+                cursor: pointer;
+            }
 
-            // radio css
+            /* Radio buttons */
             .radio-label {
                 // border: 1px solid red;
+                margin-bottom: 1rem;
                 display: flex;
                 align-items: center;
-                margin-bottom: 1rem;
                 font-size: 1.3rem;
             }
             .radio-btn {
                 margin-right: .5rem;
+                margin-left: .5rem;
+            }
+            .radio-btn:hover {
+                cursor: pointer
             }
 
-            // checkboxes Css
+            /* Checkboxes */
             .check-label {
+                margin: 1rem;
                 display: flex;
                 align-items: center;
-                margin: 1rem;
                 font-size: 1.3rem;
             }
 
             .checkbox {
                 margin-right: .5rem;
             }
+            .checkbox:hover {
+                cursor: pointer;
+            }
 
-            // textarea Css
+            /* Text Area */
             textarea {
-                width: 100%;
                 min-height: 10rem;
+                width: 100%;
                 padding: 0.625rem;
-                border-radius: .5rem;
                 outline: none;
-                border: 2px solid dodgerblue;
-                box-shadow: 0px 0px .5px 1px dodgerblue;
+                border-radius: .5rem;
+                border: 2px solid $border-clr;
                 font-size: 1.3rem;
                 font-weight: 300;
                 font-family: $fontstack;
                 resize: vertical;
             }
+            textarea:focus {
+                border: 2px solid dodgerblue;
+                box-shadow: 0px 0px .5px 1px dodgerblue;
+            }
+
+            /* Submit Button */
             button {
                 width: 100%;
                 margin: 1rem 0rem;
@@ -132,8 +155,6 @@ body {
                 background-color: #AAB7B8;
                 cursor: pointer;
             }
-
-
         }
     }
 }
