@@ -167,6 +167,13 @@ body {
     html {
         font-size:  72%;
     }
+    body {
+        main{
+            #survey-form {
+                padding: 1rem 4rem;
+            }
+        }
+    }
 }
 @media (min-width:1050px) {
     html {
