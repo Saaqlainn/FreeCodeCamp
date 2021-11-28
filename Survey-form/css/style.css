@@ -40,7 +40,7 @@ body main #discription {
 
 body main #survey-form {
   padding: 1rem 1rem;
-  background-color: #566573;
+  background-color: rgba(4, 40, 49, 0.7);
   border-radius: 5px;
   /* Name and Email inputs*/
   /*Css for label is applied for all the label in the markup*/
