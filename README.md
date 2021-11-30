@@ -1,14 +1,13 @@
 
-
 # FreeCodeCamp - Responsive WebDesign Projects .
 
 ## 🛰Live URL
 
- - [ Order Summary Card Component](https://saaqlainn.github.io/FreeCodeCamp/Tribute-page)
+ - [Tribute Page](https://saaqlainn.github.io/FreeCodeCamp/Tribute-page)
 
- - [ Order Summary Card Component](https://saaqlainn.github.io/FreeCodeCamp/Survey-form)
+ - [survey Form](https://saaqlainn.github.io/FreeCodeCamp/Survey-form)
 
- - [ Order Summary Card Component](https://saaqlainn.github.io/FreeCodeCamp/Product-Landing-Page)
+ - [Product-Landing-Page](https://saaqlainn.github.io/FreeCodeCamp/Product-Landing-Page)
 
 
 # My Process
