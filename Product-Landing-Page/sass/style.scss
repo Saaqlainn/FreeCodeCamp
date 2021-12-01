@@ -17,17 +17,16 @@ body {
     width: 100vw;
     font-family: $fontstack;
     font-size: 1.6rem;
-    // padding: 0rem 1rem;
 }
 header {
     nav {
         background-color: #2F7789;
         height: 6rem;
         width: 100%;
-        #check {
+        #checkbox {
             display: none;
         }
-        #check:checked ~ ul {
+        #checkbox:checked ~ ul {
             left:0%;
         }
         .checkbtn {
@@ -40,18 +39,18 @@ header {
         }
         .logo {
             display: inline-block;
+            margin: 0rem 2rem;
             line-height: 6rem;
             color: white;
             font-size: 2rem;
             font-weight: 600;
-            margin: 0rem 2rem;
         }
         ul {
             // border: 2px solid yellow;
+            display: block;
+            position: fixed;
             height: 100vh;
             width: 100%;
-            position: fixed;
-            display: block;
             padding-top: 5rem;
             text-align:  center;
             left: -100%;
@@ -81,14 +80,18 @@ header {
             .checkbtn {
                 display: none;
             }
-            #check:checked ~ ul {
-                left: unset;
+            /* 
+            I want to remove "#checkbox:checked ~ ul" behavior here. 
+            I dont want checking to take changes or do any thing on this screen.
+            */
+            #checkbox:checked ~ ul {
+                all: unset; /* This does'nt work */
             }
             ul {
-                height: 6rem;
-                width: auto;
                 display: block;
                 position: relative;
+                height: 6rem;
+                width: auto;
                 float: right;
                 padding: 0;
                 background: #2F7789;

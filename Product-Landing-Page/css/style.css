@@ -24,11 +24,11 @@ header nav {
   width: 100%;
 }
 
-header nav #check {
+header nav #checkbox {
   display: none;
 }
 
-header nav #check:checked ~ ul {
+header nav #checkbox:checked ~ ul {
   left: 0%;
 }
 
@@ -43,18 +43,18 @@ header nav .checkbtn {
 
 header nav .logo {
   display: inline-block;
+  margin: 0rem 2rem;
   line-height: 6rem;
   color: white;
   font-size: 2rem;
   font-weight: 600;
-  margin: 0rem 2rem;
 }
 
 header nav ul {
+  display: block;
+  position: fixed;
   height: 100vh;
   width: 100%;
-  position: fixed;
-  display: block;
   padding-top: 5rem;
   text-align: center;
   left: -100%;
@@ -77,17 +77,24 @@ header nav ul li a {
   html {
     font-size: 70%;
   }
+  header nav {
+    /* 
+            I want to remove "#checkbox:checked ~ ul" behavior here. 
+            I dont want checking to take changes or do any thing on this screen.
+            */
+  }
   header nav .checkbtn {
     display: none;
   }
-  header nav #check:checked ~ ul {
-    left: unset;
+  header nav #checkbox:checked ~ ul {
+    all: unset;
+    /* This does'nt work */
   }
   header nav ul {
-    height: 6rem;
-    width: auto;
     display: block;
     position: relative;
+    height: 6rem;
+    width: auto;
     float: right;
     padding: 0;
     background: #2F7789;
