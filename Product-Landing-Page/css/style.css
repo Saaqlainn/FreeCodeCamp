@@ -18,56 +18,35 @@ body {
   font-size: 1.6rem;
 }
 
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  background-color: #D5DBDB;
+}
+
+header img {
+  height: 3rem;
+  width: 24rem;
+  font-size: 1rem;
+}
+
 header nav {
-  background-color: #2F7789;
   height: 6rem;
   width: 100%;
 }
 
-header nav #checkbox {
-  display: none;
-}
-
-header nav #checkbox:checked ~ ul {
-  left: 0%;
-}
-
-header nav .checkbtn {
-  font-size: 2rem;
-  color: #fff;
-  float: right;
-  line-height: 6rem;
-  margin-right: 1rem;
-  cursor: pointer;
-}
-
-header nav .logo {
-  display: inline-block;
-  margin: 0rem 2rem;
-  line-height: 6rem;
-  color: white;
-  font-size: 2rem;
-  font-weight: 600;
-}
-
 header nav ul {
-  display: block;
-  position: fixed;
-  height: 100vh;
-  width: 100%;
-  padding-top: 5rem;
+  display: flex;
+  flex-direction: column;
   text-align: center;
-  left: -100%;
-  background-color: #717D7E;
-  transition: all 0.5s ease;
-}
-
-header nav ul li {
-  margin: 2em 0rem;
 }
 
 header nav ul li a {
-  color: cyan;
+  color: black;
   font-size: 1.5rem;
   padding: 2rem 1rem;
   border-radius: .5rem;
@@ -77,34 +56,15 @@ header nav ul li a {
   html {
     font-size: 70%;
   }
-  header nav {
-    /* 
-            I want to remove "#checkbox:checked ~ ul" behavior here. 
-            I dont want checking to take changes or do any thing on this screen.
-            */
-  }
-  header nav .checkbtn {
-    display: none;
-  }
-  header nav #checkbox:checked ~ ul {
-    all: unset;
-    /* This does'nt work */
+  header {
+    display: flex;
+    flex-direction: row;
   }
   header nav ul {
-    display: block;
-    position: relative;
-    height: 6rem;
-    width: auto;
-    float: right;
-    padding: 0;
-    background: #2F7789;
-  }
-  header nav ul li {
-    display: inline-block;
-    margin: 0;
-  }
-  header nav ul li a {
-    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
     line-height: 6rem;
   }
 }

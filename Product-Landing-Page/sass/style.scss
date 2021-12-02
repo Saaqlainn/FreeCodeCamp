@@ -19,48 +19,32 @@ body {
     font-size: 1.6rem;
 }
 header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    background-color: #D5DBDB;
+    img {
+        height: 3rem ;
+        width: 24rem;
+        font-size: 1rem;
+    }
     nav {
-        background-color: #2F7789;
+        // background-color: #D5DBDB ;
         height: 6rem;
         width: 100%;
-        #checkbox {
-            display: none;
-        }
-        #checkbox:checked ~ ul {
-            left:0%;
-        }
-        .checkbtn {
-            font-size:2rem;
-            color: #fff;
-            float: right;
-            line-height: 6rem;
-            margin-right: 1rem;
-            cursor: pointer;
-        }
-        .logo {
-            display: inline-block;
-            margin: 0rem 2rem;
-            line-height: 6rem;
-            color: white;
-            font-size: 2rem;
-            font-weight: 600;
-        }
+        
         ul {
-            // border: 2px solid yellow;
-            display: block;
-            position: fixed;
-            height: 100vh;
-            width: 100%;
-            padding-top: 5rem;
-            text-align:  center;
-            left: -100%;
-            background-color: #717D7E;
-            transition: all 0.5s ease;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
             li {
-                margin: 2em 0rem ;
+                // margin: 2em 0rem ;
                 a {
                     // border: 2px solid red;
-                    color: cyan;
+                    color: black;
                     font-size: 1.5rem;
                     padding: 2rem 1rem;
                     border-radius: .5rem;
@@ -74,38 +58,18 @@ header {
         font-size: 70%;
     }
     header {
+        display: flex;
+        flex-direction: row;
+
         nav {
-            // display: flex;
-            // justify-content: space-between;
-            .checkbtn {
-                display: none;
-            }
-            /* 
-            I want to remove "#checkbox:checked ~ ul" behavior here. 
-            I dont want checking to take changes or do any thing on this screen.
-            */
-            #checkbox:checked ~ ul {
-                all: unset; /* This does'nt work */
-            }
-            ul {
-                display: block;
-                position: relative;
-                height: 6rem;
-                width: auto;
-                float: right;
-                padding: 0;
-                background: #2F7789;
-                li {
-                    display: inline-block;
-                    margin: 0;
-                    a {
-                        // border: 2px solid red;
-                        color: white;
-                        line-height: 6rem;
-                    }
-                }
-            }
+           ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            line-height: 6rem;
+           }
         }
+
     }
 }
-
