@@ -126,6 +126,22 @@ main {
          }
       }
    }
+
+   .iframe-container {
+      // border: 2px solid red;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      iframe {
+         // position: absolute;
+         top: 0;
+         left: 0;
+         height: auto;
+         max-width: 30rem;
+         padding: 2rem 0rem 2rem 0rem;
+
+      }
+   }
 }
 @media all and (min-width: 617px) {
    html {

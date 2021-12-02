@@ -129,6 +129,20 @@ main .features-container .feature .data p {
   line-height: 1.8rem;
 }
 
+main .iframe-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main .iframe-container iframe {
+  top: 0;
+  left: 0;
+  height: auto;
+  max-width: 30rem;
+  padding: 2rem 0rem 2rem 0rem;
+}
+
 @media all and (min-width: 617px) {
   html {
     font-size: 70%;
