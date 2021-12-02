@@ -16,7 +16,7 @@ body {
   width: 100vw;
   font-family: "Montserrat", sans-serif;
   font-size: 1.6rem;
-  background-color: #d5dbdb;
+  background-color: #ECF0F1;
 }
 
 header {
@@ -27,7 +27,7 @@ header {
   position: sticky;
   top: 0;
   padding-top: 1rem;
-  background-color: #d5dbdb;
+  background-color: #ECF0F1;
 }
 
 header img {
@@ -141,6 +141,51 @@ main .iframe-container iframe {
   height: auto;
   max-width: 30rem;
   padding: 2rem 0rem 2rem 0rem;
+}
+
+main .price-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main .price-cards .cards {
+  border: 1px solid black;
+  text-align: center;
+  margin: 1rem 0rem;
+  height: 25rem;
+  width: 25rem;
+}
+
+main .price-cards .cards h3 {
+  font-size: 1.4rem;
+  padding: 1rem 4rem;
+  margin-bottom: 1rem;
+  background-color: #D0D3D4;
+  text-transform: uppercase;
+}
+
+main .price-cards .cards h2 {
+  font-size: 1.6rem;
+  margin: 1rem 0rem;
+}
+
+main .price-cards .cards p {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+main .price-cards .cards button {
+  font-size: 1.3rem;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  margin: 1rem 0rem 2rem 0rem;
+  padding: .8rem 1.5rem;
+  border: none;
+  border-radius: .5rem;
+  background-color: #F1C40F;
+  cursor: pointer;
 }
 
 @media all and (min-width: 617px) {
