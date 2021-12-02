@@ -188,6 +188,23 @@ main .price-cards .cards button {
   cursor: pointer;
 }
 
+footer {
+  background-color: #D0D3D4;
+  text-align: right;
+  padding: 2rem 0rem;
+}
+
+footer ul li {
+  display: inline-block;
+  margin-right: 1rem;
+  font-size: 1.2rem;
+}
+
+footer p {
+  font-size: 1.2rem;
+  margin-right: 1rem;
+}
+
 @media all and (min-width: 617px) {
   html {
     font-size: 70%;
