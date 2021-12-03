@@ -46,10 +46,10 @@ body aside ul {
 
 body aside ul li {
   font-size: 1.6rem;
-  list-style: none;
   padding: 1rem 0rem;
   border-bottom: 2px solid #F7D011;
   border-radius: .5rem;
+  list-style: circle;
 }
 
 body aside ul li a {
@@ -63,4 +63,10 @@ body main {
   display: grid;
   grid-template-columns: 4fr;
   grid-template-rows: repeat(8, 4fr);
+  padding: 0rem 2rem;
+}
+
+body main .intro ul li {
+  display: list-item;
+  list-style: circle;
 }
