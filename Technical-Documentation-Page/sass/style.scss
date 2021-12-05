@@ -2,27 +2,27 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    line-height: 2rem;
 }
+$fontstack:'Montserrat', sans-serif;
+$primariy-color : #E5E8E8;
+$secondary-color : #F2F4F4;
+$border-color : #F4D03F;
 html {
     font-size: 62.5%;
 }
 body {
     height: 100vh;
     width: 100%;
-    font-family: 'Roboto', sans-serif;
+    font-family: $fontstack;
+    background-color: $primariy-color;
     display: grid;
-    grid-template-columns: 4fr;
-    grid-template-rows: 4fr;
-    // grid-gap: 2px;
     aside {
-        background-color: aqua;
         width: 100%;
         header {
             padding: 1.5rem 0rem;
             text-align: center;
-            // position: sticky;
             label {
-                // border: 2px solid red;
                 font-size: 2rem;
                 font-weight: 700;
                 letter-spacing: 1px;
@@ -38,11 +38,8 @@ body {
             height: 12rem;
             overflow-y: scroll;
             padding: 0rem .5rem;
-            // background-color: darkred;
             li {
-                // background-color: #FFFFFF;
                 font-size: 1.6rem;
-                // list-style: none;
                 padding: 1rem 0rem;
                 border-bottom: 2px solid #F7D011;
                 border-radius: .5rem;
@@ -56,18 +53,42 @@ body {
         }
     }
     main {
-        background-color: darkcyan;
         display: grid;
-        grid-template-columns: 4fr;
-        grid-template-rows: repeat(8, 4fr);
         padding: 0rem 2rem;
-        .intro {
-            ul {
-                li {
-                    display: list-item;
-                    list-style: circle;
-                }
+        h1 {
+            padding: 1rem 0rem;
+            font-size: 2rem;
+            font-weight: 500;
+        }
+        p {
+            padding: .5rem 1.5rem;
+            // padding: 1rem 0rem 0rem 1.5rem;
+            font-size: 1.3rem;
+        }
+        pre {
+            height: fit-content;
+            code {
+                font-size: 1.1rem;
+                display: block;
+                text-align: left;
+                white-space: pre-line;
+                position: relative;
+                word-break: normal;
+                word-wrap: normal;
+                line-height: 2;
+                background-color: $secondary-color;
+                padding: 1.5rem;
+                margin: -2rem 1rem -4rem 2.8rem;
+                border-radius: 5px;
+                padding-left: 1.5rem;
             }
         }
-    }
+        ul {
+            font-size: 1.2rem;
+            li {
+                margin: 1rem 1rem 1rem 6rem;
+                 font-size: 1.2rem;
+            }
+        }
+    }   
 }
