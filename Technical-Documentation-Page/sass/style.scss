@@ -92,3 +92,30 @@ body {
         }
     }   
 }
+
+@media all and (min-width:600px) {
+    html {
+        font-size: 70%;
+    }
+    body {
+        display: grid;
+        grid-template-columns: 1.5fr 4fr;
+        aside {
+            width: 100%;
+            ul {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(12, .8fr);
+                height: auto;
+                overflow-y: hidden;
+                li {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+
+        main {
+            margin-top: 5.4rem;
+        }
+    }
+}

@@ -101,3 +101,29 @@ body main ul li {
   margin: 1rem 1rem 1rem 6rem;
   font-size: 1.2rem;
 }
+
+@media all and (min-width: 600px) {
+  html {
+    font-size: 70%;
+  }
+  body {
+    display: grid;
+    grid-template-columns: 1.5fr 4fr;
+  }
+  body aside {
+    width: 100%;
+  }
+  body aside ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(12, 0.8fr);
+    height: auto;
+    overflow-y: hidden;
+  }
+  body aside ul li {
+    font-size: 1.3rem;
+  }
+  body main {
+    margin-top: 5.4rem;
+  }
+}
