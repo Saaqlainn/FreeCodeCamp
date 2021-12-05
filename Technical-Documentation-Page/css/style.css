@@ -17,22 +17,22 @@ body {
   display: grid;
 }
 
-body aside {
+body nav {
   width: 100%;
 }
 
-body aside header {
+body nav header {
   padding: 1.5rem 0rem;
   text-align: center;
 }
 
-body aside header label {
+body nav header label {
   font-size: 2rem;
   font-weight: 700;
   letter-spacing: 1px;
 }
 
-body aside ul {
+body nav ul {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(10, 1fr);
@@ -43,7 +43,7 @@ body aside ul {
   padding: 0rem .5rem;
 }
 
-body aside ul li {
+body nav ul li {
   font-size: 1.6rem;
   padding: 1rem 0rem;
   border-bottom: 2px solid #F7D011;
@@ -51,7 +51,7 @@ body aside ul li {
   list-style: circle;
 }
 
-body aside ul li a {
+body nav ul li a {
   text-decoration: none;
   margin-left: 2rem;
   color: black;
@@ -110,17 +110,17 @@ body main ul li {
     display: grid;
     grid-template-columns: 1.5fr 4fr;
   }
-  body aside {
+  body nav {
     width: 100%;
   }
-  body aside ul {
+  body nav ul {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(12, 0.8fr);
     height: auto;
     overflow-y: hidden;
   }
-  body aside ul li {
+  body nav ul li {
     font-size: 1.3rem;
   }
   body main {

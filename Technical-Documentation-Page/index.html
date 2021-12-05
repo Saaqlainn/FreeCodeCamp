@@ -9,27 +9,27 @@
     <title>Technical Documentation Page</title>
 </head>
 <body>
-<aside>
+<nav id="navbar">
     <header>
         <label class="title" for="title">JS Documentation</label>
     </header>
     <ul class="sidebar">
-        <li><a href="#section-1st">Introduction</a></li>
-        <li><a href="#section-2nd">what you Should already know</a></li>
-        <li><a href="#section-3rd">Javascript And Java</a></li>
-        <li><a href="#section-4th">Hello World</a></li>
-        <li><a href="#section-5th">Variables</a></li>
-        <li><a href="#section-6th">Declaring Variables</a></li>
-        <li><a href="#section-7th">Varible Scope </a></li>
-        <li><a href="#section-8th">Global Variables</a></li>
-        <li><a href="#section-9th">Constant</a></li>
-        <li><a href="#section-10th">Data Types</a></li>
-        <li><a href="#section-11th">if.. else Statements</a></li>
-        <li><a href="#section-12th">While Statement</a></li>
-        <li><a href="#section-13th">Function Declaration</a></li>
-        <li><a href="#section-14th">Reference</a></li>
+        <li><a class="nav-links" href="#Introduction">Introduction</a></li>
+        <li><a class="nav-links" href="#what_You_Should_Already_Know">what you Should already know</a></li>
+        <li><a class="nav-links" href="#Javascript_And_Java">Javascript And Java</a></li>
+        <li><a class="nav-links" href="#Hello_World">Hello World</a></li>
+        <li><a class="nav-links" href="#Variables">Variables</a></li>
+        <li><a class="nav-links" href="#Declaring_Variables">Declaring Variables</a></li>
+        <li><a class="nav-links" href="#Variable_Scope">Varible Scope </a></li>
+        <li><a class="nav-links" href="#Global_Variables">Global Variables</a></li>
+        <li><a class="nav-links" href="#Constant">Constant</a></li>
+        <li><a class="nav-links" href="#Data_Types">Data Types</a></li>
+        <li><a class="nav-links" href="#if..else_Statements">if..else Statements</a></li>
+        <li><a class="nav-links" href="#While_Statement">While Statement</a></li>
+        <li><a class="nav-links" href="#Function_Declation">Function Declaration</a></li>
+        <li><a class="nav-links" href="#Reference">Reference</a></li>
     </ul>
-</aside>
+</nav>
 <main id="main-doc">
     <section class="main-section" id="section-1st">
     <header id="Introduction" class="title">Introduction</header>
@@ -42,7 +42,7 @@
     </section>
 
     <section class="main-section" id="section-2nd">
-        <header id="already-know" class="title">what you should already know</header>
+        <header id="What_You_Should_Already_Know" class="title">what you should already know</header>
         <ul>
             This guide assumes you have the following basic background:
             <li>A general understanding of the Internet and the World Wide Web (WWW).</li>
@@ -52,14 +52,14 @@
     </section>
 
     <section class="main-section" id="section-3rd">
-        <header id="javascrpt_and_java" class="title">Javascript And Java</header>
+        <header id="Javascrpt_And_Java" class="title">Javascript And Java</header>
         <p class="desc">JavaScript and Java are similar in some ways but fundamentally different in some others. The JavaScript language resembles Java but does not have Java's static typing and strong type checking. JavaScript follows most Java expression syntax, naming conventions and basic control-flow constructs which was the reason why it was renamed from LiveScript to JavaScript.</p>
         <p class="desc">In contrast to Java's compile-time system of classes built by declarations, JavaScript supports a runtime system based on a small number of data types representing numeric, Boolean, and string values. JavaScript has a prototype-based object model instead of the more common class-based object model. The prototype-based model provides dynamic inheritance; that is, what is inherited can vary for individual objects. JavaScript also supports functions without any special declarative requirements. Functions can be properties of objects, executing as loosely typed methods.</p>
         <p class="desc">JavaScript is a very free-form language compared to Java. You do not have to declare all variables, classes, and methods. You do not have to be concerned with whether methods are public, private, or protected, and you do not have to implement interfaces. Variables, parameters, and function return types are not explicitly typed.</p>
     </section>
 
     <section class="main-section" id="section-4th">
-        <header id="hello_world" class="title">Hello World</header>
+        <header id="Hello_World" class="title">Hello World</header>
         <P class="desc">To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code:</P>
         <pre>
             <code class="language-javascript">function greetMe(yourName) { alert("Hello " + yourName); }
@@ -77,7 +77,7 @@
     </section>
 
     <section class="main-section" id="section-6th">
-        <header id="Declaring_variables" class="title">Declaring Variables</header>
+        <header id="Declaring_Variables" class="title">Declaring Variables</header>
         <p class="desc">You can declare a variable in three ways:</p>
         <p class="desc">With the keyword var. For example,</p>
         <pre>
@@ -97,7 +97,7 @@
     </section>
 
     <section class="main-section" id="section-7th">
-        <header id="Variable_scope" class="title">Variable scope</header>
+        <header id="Variable_Scope" class="title">Variable scope</header>
         <p class="desc">When you declare a variable outside of any function, it is called a global variable, because it is available to any other code in the current document. When you declare a variable within a function, it is called a local variable, because it is available only within that function.</p>
         <p class="desc">JavaScript before ECMAScript 2015 does not have block statement scope; rather, a variable declared within a block is local to the function (or global scope) that the block resides within. For example the following code will log 5, because the scope of x is the function (or global context) within which x is declared, not the block, which in this case is an if statement.</p>
         <pre>
@@ -111,7 +111,7 @@
     </section>
 
     <section class="main-section" id="section-8th">
-        <header id="Global_variables" class="title">Global variables</header>
+        <header id="Global_Variables" class="title">Global variables</header>
         <p class="desc">Global variables are in fact properties of the global object. In web pages the global object is window, so you can set and access global variables using the window.variable syntax.</p>
         <p class="desc">Consequently, you can access global variables declared in one window or frame from another window or frame by specifying the window or frame name. For example, if a variable called phoneNumber is declared in a document, you can refer to this variable from an iframe as parent.phoneNumber.</p>
     </section>
@@ -137,7 +137,7 @@
     </section>
 
     <section class="main-section" id="section-10th">
-        <header id="Data_types" class="title">Data types</header>
+        <header id="Data_Types" class="title">Data types</header>
         <p class="desc">The latest ECMAScript standard defines seven data types:</p>
         <ul>
             <li>Six data types that are primitives:</li>
@@ -183,7 +183,7 @@
     </section>
 
     <section class="main-section" id="section-12th">
-        <header id="while_statement" class="title">While Statement</header>
+        <header id="While_Statement" class="title">While Statement</header>
         <p class="desc"></p>
         <pre>
             <code class="language-javascript">while (condition) statement</code>
@@ -206,7 +206,7 @@
     </section>
 
     <section class="main-section" id="section-13th">
-        <header id="function_declaration" class="title">Function declarations</header>
+        <header id="function_Declaration" class="title">Function declarations</header>
         <p class="desc">A function definition (also called a function declaration, or function statement) consists of the function keyword, followed by:</p>
         <ul>
             <li>The name of the function</li>
