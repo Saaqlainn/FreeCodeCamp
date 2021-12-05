@@ -7,9 +7,9 @@
 
  - [survey Form](https://saaqlainn.github.io/FreeCodeCamp/Survey-form)
 
- - [Product-Landing-Page](https://saaqlainn.github.io/FreeCodeCamp/Product-Landing-Page)
+ - [Product Landing Page](https://saaqlainn.github.io/FreeCodeCamp/Product-Landing-Page)
 
- - [Technical_Documantaton-Page](https://saaqlainn.github.io/FreeCodeCamp/Technical-Documentation-Page)
+ - [Technical Documantaton Page](https://saaqlainn.github.io/FreeCodeCamp/Technical-Documentation-Page)
 
 
 # My Process
