@@ -19,7 +19,6 @@ body {
 }
 
 nav {
-  border: 2px solid red;
   height: 6rem;
   width: 100%;
   display: flex;
@@ -27,7 +26,6 @@ nav {
 }
 
 nav ul {
-  border: 2px solid red;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -39,4 +37,43 @@ nav ul li {
 
 nav ul li a {
   padding: 0rem .5rem;
+}
+
+main {
+  background-color: #c3bfbf;
+}
+
+main #Home {
+  width: 100vw;
+  height: 86vh;
+  border: 2px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main #Home .container {
+  border: 2px solid #001aff;
+}
+
+main #Home .container h1 {
+  padding: 1rem 0rem;
+}
+
+main #Home .container .work {
+  font-size: 1.4rem;
+}
+
+main #Home .container .desc {
+  width: 30rem;
+  padding: 1rem 0rem;
+  font-size: 1.3rem;
+}
+
+main #Home .container .btn {
+  padding: .5rem .5rem;
+  border-radius: .5rem;
+  border: 1px solid #1b1b1b;
+  font-size: 1.4rem;
+  margin-bottom: .5rem;
 }
