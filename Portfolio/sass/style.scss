@@ -14,7 +14,7 @@ $Gradient:linear-gradient(
     #ff6f91,
     #ff9671,
     #ffc75f,
-    #f9f871
+    // #f9f871
 );
 $secondary-color:'';
 
@@ -168,6 +168,10 @@ main {
 }
 
 .myProject {
+    h1 {
+        text-align: center;
+        margin: 2rem 0rem ;
+    }
     .projects {
         // border: 2px solid red;
         padding: 1rem;
@@ -257,5 +261,12 @@ main {
         background-color: #fff;
         color: #1b1b1b;
         cursor: pointer;
+    }
+}
+footer {
+    padding: 1rem 1rem;
+    h3 {
+        font-size: 1rem;
+        text-align: center;
     }
 }

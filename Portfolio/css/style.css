@@ -41,7 +41,7 @@ nav ul li a {
 
 main {
   background-color: #F39C12;
-  background-image: linear-gradient(45deg, #845ec2, #d65db1, #ff6f91, #ff9671, #ffc75f, #f9f871);
+  background-image: linear-gradient(45deg, #845ec2, #d65db1, #ff6f91, #ff9671, #ffc75f);
   background-size: 400%;
   animation: bgAnimation 10s infinite alternate;
 }
@@ -106,7 +106,7 @@ main #Home .container .btn {
   font-family: "Montserrat", sans-serif;
   margin-bottom: .5rem;
   background-color: #157d9c;
-  background-image: linear-gradient(45deg, #845ec2, #d65db1, #ff6f91, #ff9671, #ffc75f, #f9f871);
+  background-image: linear-gradient(45deg, #845ec2, #d65db1, #ff6f91, #ff9671, #ffc75f);
   background-size: 300%;
   background-position: left;
   transition: background-position 1s ease;
@@ -152,6 +152,11 @@ main #Home .container .btn:focus {
 
 .about .btn i {
   margin-left: .5rem;
+}
+
+.myProject h1 {
+  text-align: center;
+  margin: 2rem 0rem;
 }
 
 .myProject .projects {
@@ -241,4 +246,13 @@ main #Home .container .btn:focus {
   background-color: #fff;
   color: #1b1b1b;
   cursor: pointer;
+}
+
+footer {
+  padding: 1rem 1rem;
+}
+
+footer h3 {
+  font-size: 1rem;
+  text-align: center;
 }
