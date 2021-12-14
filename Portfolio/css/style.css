@@ -65,7 +65,7 @@ main #Home {
 
 main #Home .container h5 {
   font-size: 1.2rem;
-  color: #BDC3C7;
+  color: #1b1b1b;
   text-transform: uppercase;
 }
 
@@ -118,4 +118,38 @@ main #Home .container .btn {
 main #Home .container .btn:hover,
 main #Home .container .btn:focus {
   background-position: right;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about h1 {
+  text-transform: uppercase;
+  padding: 1rem 0rem;
+}
+
+.about h5 {
+  margin: 1rem 0rem;
+}
+
+.about .paragraph {
+  text-align: center;
+}
+
+.about .btn {
+  border: none;
+  border-radius: .5rem;
+  padding: 1rem 1rem;
+  margin: 2rem 0rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.about .btn i {
+  margin-left: .5rem;
 }
