@@ -40,40 +40,82 @@ nav ul li a {
 }
 
 main {
-  background-color: #c3bfbf;
+  background-color: #F39C12;
+  background-image: linear-gradient(45deg, #845ec2, #d65db1, #ff6f91, #ff9671, #ffc75f, #f9f871);
+  background-size: 400%;
+  animation: bgAnimation 10s infinite alternate;
+}
+
+@keyframes bgAnimation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
 }
 
 main #Home {
   width: 100vw;
   height: 86vh;
-  border: 2px solid red;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 }
 
-main #Home .container {
-  border: 2px solid #001aff;
+main #Home .container h5 {
+  font-size: 1.2rem;
+  color: #BDC3C7;
+  text-transform: uppercase;
 }
 
 main #Home .container h1 {
+  font-size: 3.25rem;
+  text-transform: uppercase;
   padding: 1rem 0rem;
 }
 
-main #Home .container .work {
-  font-size: 1.4rem;
+main #Home .container h1 span {
+  color: #2C3E50;
 }
 
-main #Home .container .desc {
-  width: 30rem;
-  padding: 1rem 0rem;
-  font-size: 1.3rem;
+main #Home .container .socials ul {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0rem;
+}
+
+main #Home .container .socials ul li {
+  margin: 1rem 0rem;
+  list-style: none;
+}
+
+main #Home .container .socials ul li a {
+  color: #000;
+  margin-right: 1rem;
+  font-size: 1.7rem;
 }
 
 main #Home .container .btn {
-  padding: .5rem .5rem;
+  padding: 1rem 1rem;
   border-radius: .5rem;
   border: 1px solid #1b1b1b;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
   margin-bottom: .5rem;
+  background-color: #157d9c;
+  background-image: linear-gradient(45deg, #845ec2, #d65db1, #ff6f91, #ff9671, #ffc75f, #f9f871);
+  background-size: 300%;
+  background-position: left;
+  transition: background-position 1s ease;
+  color: #1b1b1b;
+  border: none;
+  cursor: pointer;
+}
+
+main #Home .container .btn:hover,
+main #Home .container .btn:focus {
+  background-position: right;
 }
