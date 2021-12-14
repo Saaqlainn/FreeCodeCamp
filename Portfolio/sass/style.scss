@@ -167,6 +167,26 @@ main {
     }
 }
 
+.myProject {
+    .projects {
+        // border: 2px solid red;
+        padding: 1rem;
+        margin: 0rem .5rem 3rem .5rem;
+        box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
+        img {
+            height: 25rem;
+            width: 100%;
+            box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+
+        }
+        .title {
+            font-size: 1.6rem;
+            margin: 1rem 0rem ;
+            // text-transform: uppercase;
+        }
+    }
+}
+
 .contact {
     display: flex;
     flex-direction: column;
@@ -237,6 +257,5 @@ main {
         background-color: #fff;
         color: #1b1b1b;
         cursor: pointer;
-
     }
 }
