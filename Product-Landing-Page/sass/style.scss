@@ -14,7 +14,7 @@ html {
 }
 body {
    height: 100vh;
-   width: 100vw;
+   width: 100%;
    font-family: $fontstack;
    font-size: 1.6rem;
    background-color: #ECF0F1;
@@ -219,18 +219,25 @@ footer {
       }
    }
    main {
+      // border: 2px solid red;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       .features-container {
          display: flex;
          flex-direction: column;
          justify-content: center;
          align-items: center;
+         // margin: 0rem 3rem;
+         margin: 3rem 0rem;
          .feature {
-            // border: 2px solid blue;
             width: 95%;
             text-align: left;
             padding: 1rem 0rem;
             display: flex;
             flex-direction: row;
+            margin: 2rem 0rem ;
             i {
                // border: 1px solid red;
                display: inline-block;
@@ -241,6 +248,7 @@ footer {
                justify-content: center;
                align-items: center;
                font-size: 4rem;
+               color: #F39C12;
             }
             .data {
                // border: 1px solid red;
@@ -255,7 +263,8 @@ footer {
       }
 
       .iframe-container {
-         border: 1px solid red;
+         // border: 1px solid red;
+         margin: 3rem 0rem ;
          iframe {
             max-width: 70%;
             height: 25rem;
@@ -264,8 +273,10 @@ footer {
 
       .price-cards {
          flex-direction: row;
+         margin: 1rem 0rem ;
          .cards {
-            margin-right: 1rem;
+            margin-right: 4rem;
+
          }
       }
    }
