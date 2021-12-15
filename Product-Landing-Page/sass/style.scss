@@ -88,7 +88,7 @@ form {
       box-shadow: 0px 0px .5px 1px dodgerblue;
 
    }
-   button {
+   #submit {
       font-size: 1.3rem;
       font-weight: 700;
       font-family: $fontstack;
@@ -100,7 +100,7 @@ form {
       cursor: pointer;
    
    }
-   button:hover {
+   #submit:hover {
       background-color: #F39C12;
    }
 }

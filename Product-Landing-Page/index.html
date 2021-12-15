@@ -6,16 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FCC : Product Landing Page</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://kit.fontawesome.com/daaf82486d.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <header id="header">
-    <img src="images/product-landing-page-logo.png" alt="">
-    <nav>
+    <img id="header-img" src="images/product-landing-page-logo.png" alt="">
+    <nav id="nav-bar">
         <ul>
-            <li><a href="#Feature">Feature</a></li>
-            <li><a href="#How It Work">How It Work</a></li>
-            <li><a href="#Pricing">Pricing</a></li>
+            <li><a class="nav-link" href="#Feature">Feature</a></li>
+            <li><a class="nav-link" href="#How-It-Work">How It Work</a></li>
+            <li><a class="nav-link" href="#Pricing">Pricing</a></li>
         </ul>
     </nav>
 </header>
@@ -23,10 +22,10 @@
     <form action="action.php" id="form">
     <h3>Handcrafted, Home-made masterpieces</h3>
     <input type="Email" name="email" id="email" placeholder="Enter your email address" required>
-    <button id="submit">Get Started</button>
+    <input id="submit" type="button" value="Get Started">
     </form>
 
-    <section class="features-container">
+    <section id="Feature" class="features-container">
         <div class="feature-1 feature">
             <i class="fas fa-fire"></i>
             <div class="premium data">
@@ -35,7 +34,7 @@
             </div>
         </div>
 
-        <div class="feature-2 feature">
+        <div id="How-It-Work" class="feature-2 feature">
             <i class="fas fa-truck"></i>
             <div class="shipping data">
                 <h3> Fast Shipping</h3>
@@ -43,7 +42,7 @@
             </div>
         </div>
 
-        <div class="feature-3 feature">
+        <div id="Pricing" class="feature-3 feature">
             <i class="fas fa-battery-full"></i>
             <div class="quality data">
                 <h3>Quality Assurance</h3>
@@ -53,7 +52,7 @@
     </section>
 
     <section class="iframe-container">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/y8Yv4pnO7qc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/y8Yv4pnO7qc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </section>
 <section class="price-cards">
     <div class="cards card-1">
@@ -88,6 +87,7 @@
 </section>
 
 </main>
+<script src="https://kit.fontawesome.com/daaf82486d.js" crossorigin="anonymous"></script>
 </body>
 <footer>
     <ul>
