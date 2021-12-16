@@ -55,48 +55,48 @@ main {
   }
 }
 
-main #Home {
+main .Home {
   width: 100vw;
-  height: 86vh;
+  height: 100vh;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
 
-main #Home .container h5 {
+main .Home .container h5 {
   font-size: 1.2rem;
   color: #1b1b1b;
   text-transform: uppercase;
 }
 
-main #Home .container h1 {
+main .Home .container h1 {
   font-size: 3.25rem;
   text-transform: uppercase;
   padding: 1rem 0rem;
 }
 
-main #Home .container h1 span {
+main .Home .container h1 span {
   color: #2C3E50;
 }
 
-main #Home .container .socials ul {
+main .Home .container .socials ul {
   display: flex;
   align-items: center;
   padding: 2rem 0rem;
 }
 
-main #Home .container .socials ul li {
+main .Home .container .socials ul li {
   margin: 1rem 0rem;
   list-style: none;
 }
 
-main #Home .container .socials ul li a {
+main .Home .container .socials ul li a {
   color: #000;
   margin-right: 1rem;
   font-size: 1.7rem;
 }
 
-main #Home .container .btn {
+main .Home .container .btn {
   padding: 1rem 1rem;
   border-radius: .5rem;
   border: 1px solid #1b1b1b;
@@ -115,8 +115,8 @@ main #Home .container .btn {
   cursor: pointer;
 }
 
-main #Home .container .btn:hover,
-main #Home .container .btn:focus {
+main .Home .container .btn:hover,
+main .Home .container .btn:focus {
   background-position: right;
 }
 

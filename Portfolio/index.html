@@ -8,16 +8,17 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav>
+    <nav id="navbar">
         <ul>
-            <li><a href="#Home">Home</a></li>
+            <li><a href="#welcome-section">Home</a></li>
             <li><a href="#About">About</a></li>
             <li><a href="#Project">Project</a></li>
             <li><a href="#Project">Contact</a></li>
+            <!-- <li><a id="profile-link" target="_blank" href="https://github.com/Saaqlainn">Profile</a></li> -->
         </ul>
     </nav>   
     <main>
-        <section id="Home">
+        <section class="Home" id="welcome-section">
             <div class="container">
                 <h5>Hi There!</h5>
                 <h1>I'am <span>Saqlain</span></h1>
@@ -47,7 +48,7 @@
             <button class="btn">Download CV<i class="fas fa-arrow-circle-down"></i></button>
         </section>
 
-        <section class="myProject">
+        <section class="myProject" id="projects">
             <h1>My Projects</h1>
             <div class="projects" id="project-1">
                 <img src="./images/four-cards.jpg" alt="fourCardImage">
@@ -71,8 +72,8 @@
                 <img src="./images/social-spoof.jpg" alt="fourCardImage">
                 <h3 class="title">Social Spoof Session Master</h3>
                 <div class="icons">
-                    <i class="fab fa-github"></i>
-                    <i class="fas fa-wifi"></i>
+                    <a href="https://github.com/Saaqlainn/FrontEnd-Tasks/tree/master/social-spoof-section%20master"><i class="fab fa-github"></i></a>
+                    <a href="https://saaqlainn.github.io/FrontEnd-Tasks/social-spoof-section%20master"><i class="fas fa-wifi"></i></a>
                 </div>
             </div>
 
