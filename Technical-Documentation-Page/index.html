@@ -15,24 +15,24 @@
     </header>
     <ul class="sidebar">
         <li><a class="nav-link" href="#Introduction">Introduction</a></li>
-        <li><a class="nav-link" href="#What_You_Should_Already_Know">what you Should already know</a></li>
-        <li><a class="nav-link" href="#Javascript_And_Java">Javascript And Java</a></li>
+        <li><a class="nav-link" href="#What_You_Should_Already_know">What You Should Already Know</a></li>
+        <li><a class="nav-link" href="#JavaScript_And_Java">Javascript And Java</a></li>
         <li><a class="nav-link" href="#Hello_World">Hello World</a></li>
         <li><a class="nav-link" href="#Variables">Variables</a></li>
         <li><a class="nav-link" href="#Declaring_Variables">Declaring Variables</a></li>
-        <li><a class="nav-link" href="#Variable_Scope">Varible Scope </a></li>
+        <li><a class="nav-link" href="#Variable_Scope">Variable Scope </a></li>
         <li><a class="nav-link" href="#Global_Variables">Global Variables</a></li>
         <li><a class="nav-link" href="#Constant">Constant</a></li>
         <li><a class="nav-link" href="#Data_Types">Data Types</a></li>
-        <li><a class="nav-link" href="#if..else_Statements">if..else Statements</a></li>
+        <!-- <li><a class="nav-link" href="#if_else_Statements">if...else Statements</a></li> -->
         <li><a class="nav-link" href="#While_Statement">While Statement</a></li>
         <li><a class="nav-link" href="#Function_Declaration">Function Declaration</a></li>
         <li><a class="nav-link" href="#Reference">Reference</a></li>
     </ul>
 </nav>
 <main id="main-doc">
-    <section class="main-section" id="section-1st">
-    <header id="Introduction" class="title">Introduction</header>
+    <section class="main-section" id="Introduction">
+    <header  class="title">Introduction</header>
         <p class="desc">JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language. Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide programmatic control over them</p>
         <p class="desc">JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements. Core JavaScript can be extended for a variety of purposes by supplementing it with additional objects; for example:</p>
         <ul>
@@ -41,8 +41,8 @@
         </ul>
     </section>
 
-    <section class="main-section" id="section-2nd">
-        <header id="What_You_Should_Already_Know" class="title">what you should already know</header>
+    <section class="main-section" id="What_You_Should_Already_know">
+        <header  class="title">What You Should Already Know</header>
         <ul>
             This guide assumes you have the following basic background:
             <li>A general understanding of the Internet and the World Wide Web (WWW).</li>
@@ -51,15 +51,15 @@
         </ul>
     </section>
 
-    <section class="main-section" id="section-3rd">
-        <header id="Javascript_And_Java" class="title">Javascript And Java</header>
+    <section class="main-section" id="JavaScript_And_Java">
+        <header  class="title">Javascript And Java</header>
         <p class="desc">JavaScript and Java are similar in some ways but fundamentally different in some others. The JavaScript language resembles Java but does not have Java's static typing and strong type checking. JavaScript follows most Java expression syntax, naming conventions and basic control-flow constructs which was the reason why it was renamed from LiveScript to JavaScript.</p>
         <p class="desc">In contrast to Java's compile-time system of classes built by declarations, JavaScript supports a runtime system based on a small number of data types representing numeric, Boolean, and string values. JavaScript has a prototype-based object model instead of the more common class-based object model. The prototype-based model provides dynamic inheritance; that is, what is inherited can vary for individual objects. JavaScript also supports functions without any special declarative requirements. Functions can be properties of objects, executing as loosely typed methods.</p>
         <p class="desc">JavaScript is a very free-form language compared to Java. You do not have to declare all variables, classes, and methods. You do not have to be concerned with whether methods are public, private, or protected, and you do not have to implement interfaces. Variables, parameters, and function return types are not explicitly typed.</p>
     </section>
 
-    <section class="main-section" id="section-4th">
-        <header id="Hello_World" class="title">Hello World</header>
+    <section class="main-section" id="Hello_World">
+        <header  class="title">Hello World</header>
         <P class="desc">To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code:</P>
         <pre>
             <code class="language-javascript">function greetMe(yourName) { alert("Hello " + yourName); }
@@ -69,15 +69,15 @@
         <p class="desc">Select the code in the pad and hit Ctrl+R to watch it unfold in your browser!</p>
     </section>
 
-    <section class="main-section" id="section-5th">
-        <header id="Variables" class="title">Variables</header>
+    <section class="main-section" id="Variables">
+        <header  class="title">Variables</header>
         <p class="desc">You use variables as symbolic names for values in your application. The names of variables, called identifiers, conform to certain rules.</p>
         <p class="desc">A JavaScript identifier must start with a letter, underscore (_), or dollar sign ($); subsequent characters can also be digits (0-9). Because JavaScript is case sensitive, letters include the characters "A" through "Z" (uppercase) and the characters "a" through "z" (lowercase).</p>
         <p class="desc">You can use ISO 8859-1 or Unicode letters such as å and ü in identifiers. You can also use the Unicode escape sequences as characters in identifiers. Some examples of legal names are Number_hits, temp99, and _name.</p>
     </section>
 
-    <section class="main-section" id="section-6th">
-        <header id="Declaring_Variables" class="title">Declaring Variables</header>
+    <section class="main-section" id="Declaring_Variables">
+        <header  class="title">Declaring Variables</header>
         <p class="desc">You can declare a variable in three ways:</p>
         <p class="desc">With the keyword var. For example,</p>
         <pre>
@@ -96,8 +96,8 @@
         <p class="desc">This syntax can be used to declare a block scope local variable. See Variable scope below.</p>
     </section>
 
-    <section class="main-section" id="section-7th">
-        <header id="Variable_Scope" class="title">Variable scope</header>
+    <section class="main-section" id="Variable_Scope">
+        <header  class="title">Variable Scope</header>
         <p class="desc">When you declare a variable outside of any function, it is called a global variable, because it is available to any other code in the current document. When you declare a variable within a function, it is called a local variable, because it is available only within that function.</p>
         <p class="desc">JavaScript before ECMAScript 2015 does not have block statement scope; rather, a variable declared within a block is local to the function (or global scope) that the block resides within. For example the following code will log 5, because the scope of x is the function (or global context) within which x is declared, not the block, which in this case is an if statement.</p>
         <pre>
@@ -110,14 +110,15 @@
         </pre>
     </section>
 
-    <section class="main-section" id="section-8th">
-        <header id="Global_Variables" class="title">Global variables</header>
+    <section class="main-section" id="Global_Variables">
+        <header  class="title">Global Variables</header>
         <p class="desc">Global variables are in fact properties of the global object. In web pages the global object is window, so you can set and access global variables using the window.variable syntax.</p>
         <p class="desc">Consequently, you can access global variables declared in one window or frame from another window or frame by specifying the window or frame name. For example, if a variable called phoneNumber is declared in a document, you can refer to this variable from an iframe as parent.phoneNumber.</p>
     </section>
 
-    <section class="main-section" id="section-9th">
-        <header id="Constant" class="title">Constant</header>
+
+    <section class="main-section" id="Constant">
+        <header  class="title">Constant</header>
         <p class="desc">You can create a read-only, named constant with the const keyword. The syntax of a constant identifier is the same as for a variable identifier: it must start with a letter, underscore or dollar sign and can contain alphabetic, numeric, or underscore characters.</p>
         <pre>
             <code class="language-javascript">const PI = 3.14;</code>
@@ -136,8 +137,8 @@
         </pre>
     </section>
 
-    <section class="main-section" id="section-10th">
-        <header id="Data_Types" class="title">Data types</header>
+    <section class="main-section" id="Data_Types">
+        <header  class="title">Data Types</header>
         <p class="desc">The latest ECMAScript standard defines seven data types:</p>
         <ul>
             <li>Six data types that are primitives:</li>
@@ -152,8 +153,8 @@
         <p class="decs">Although these data types are a relatively small amount, they enable you to perform useful functions with your applications. Objects and functions are the other fundamental elements in the language. You can think of objects as named containers for values, and functions as procedures that your application can perform</p>
     </section>
 
-    <section class="main-section" id="section-11th">
-        <header id="if..else_Statements" class="title">if...else statements</header>
+    <!-- <section class="main-section" id="if_else_Statements">
+        <header  class="title">if...else Statements</header>
         <p class="desc">Use the if statement to execute a statement if a logical condition is true. Use the optional else clause to execute a statement if the condition is false. An if statement looks as follows:</p>
         <pre>
             <code class="language-javascript">if (condition) { statement_1; } else { statement_2; }</code>
@@ -178,12 +179,11 @@
         <p class="desc">If you need to use an assignment in a conditional expression, a common practice is to put additional parentheses around the assignment. For example:</p>
         <pre>
             <code class="language-javascript">if ((x = y)) { /* statements here */ }</code>
-        </pre>
-        
-    </section>
+        </pre>       
+    </section> -->
 
-    <section class="main-section" id="section-12th">
-        <header id="While_Statement" class="title">While Statement</header>
+    <section class="main-section" id="While_Statement">
+        <header  class="title">While Statement</header>
         <p class="desc"></p>
         <pre>
             <code class="language-javascript">while (condition) statement</code>
@@ -205,8 +205,8 @@
         <p class="desc">After completing the third pass, the condition n < 3 is no longer true, so the loop terminates.</p>
     </section>
 
-    <section class="main-section" id="section-13th">
-        <header id="Function_Declaration" class="title">Function Declaration</header>
+    <section class="main-section" id="Function_Declaration">
+        <header  class="title">Function Declaration</header>
         <p class="desc">A function definition (also called a function declaration, or function statement) consists of the function keyword, followed by:</p>
         <ul>
             <li>The name of the function</li>
@@ -222,12 +222,13 @@
             <code class="language-javascript">return number * number;</code>
         </pre>
         <p class="desc">Primitive parameters (such as a number) are passed to functions by value; the value is passed to the function, but if the function changes the value of the parameter, this change is not reflected globally or in the calling function.</p>
-
     </section>
-    <section class="main-section" id="secton-14th">
-        <header id="Reference" class="title">Reference</header>
+
+    <section class="main-section" id="Reference">
+        <header  class="title">Reference</header>
         <ul><li>All the documentation in this page is taken from <a href="">MDN</a></li></ul>
     </section>
+
 </main>
 </body>
 </html>

@@ -17,10 +17,6 @@ body {
   display: grid;
 }
 
-body nav {
-  width: 100%;
-}
-
 body nav header {
   padding: 1.5rem 0rem;
   text-align: center;
@@ -62,22 +58,22 @@ body main {
   padding: 0rem 2rem;
 }
 
-body main header {
+body main section header {
   padding: 1rem 0rem;
   font-size: 2rem;
   font-weight: 500;
 }
 
-body main p {
+body main section p {
   padding: .5rem 1.5rem;
   font-size: 1.3rem;
 }
 
-body main pre {
+body main section pre {
   height: fit-content;
 }
 
-body main pre code {
+body main section pre code {
   font-size: 1.1rem;
   display: block;
   text-align: left;
@@ -93,11 +89,11 @@ body main pre code {
   padding-left: 1.5rem;
 }
 
-body main ul {
+body main section ul {
   font-size: 1.2rem;
 }
 
-body main ul li {
+body main section ul li {
   margin: 1rem 1rem 1rem 6rem;
   font-size: 1.2rem;
 }
