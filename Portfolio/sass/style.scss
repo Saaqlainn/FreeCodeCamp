@@ -31,6 +31,10 @@ body {
 }
 nav {
     // border: 2px solid red;
+    /* Change here */
+    // position: fixed;
+    // background-color: #ECF0F1;
+    /* Change here */
     height: 6rem;
     width: 100%;
     display: flex;
@@ -168,6 +172,7 @@ main {
 }
 
 .myProject {
+    border: 2px solid red;
     h1 {
         text-align: center;
         margin: 2rem 0rem ;
@@ -270,3 +275,14 @@ footer {
         text-align: center;
     }
 }
+/* Changed here*/
+// @media all and (min-width:600px) {
+//     html {
+//         font-size: 70%;
+//     }
+//     .myProject {
+//         display: flex;
+
+//     }
+
+// }

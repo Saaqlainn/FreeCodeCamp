@@ -19,6 +19,8 @@ body {
 }
 
 nav {
+  /* Change here */
+  /* Change here */
   height: 6rem;
   width: 100%;
   display: flex;
@@ -154,6 +156,10 @@ main .Home .container .btn:focus {
   margin-left: .5rem;
 }
 
+.myProject {
+  border: 2px solid red;
+}
+
 .myProject h1 {
   text-align: center;
   margin: 2rem 0rem;
@@ -256,3 +262,5 @@ footer h3 {
   font-size: 1rem;
   text-align: center;
 }
+
+/* Changed here*/
