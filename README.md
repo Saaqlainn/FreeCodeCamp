@@ -1,9 +1,9 @@
 
-# FreeCodeCamp - Responsive WebDesign Projects .
-
-## 🚀Live URLs
+# FreeCodeCamp - Responsive WebDesign Projects.
 
 ![myFCC certificate](https://user-images.githubusercontent.com/86760164/146559995-cd0a9004-bcc9-456b-bfaf-87e567b66a69.png)
+
+## 🚀Live URLs
 
  - [Tribute Page](https://saaqlainn.github.io/FreeCodeCamp/Tribute-page)
 
